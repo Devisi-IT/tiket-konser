@@ -16,7 +16,7 @@ body {
     color: #ffffff; /* Warna teks untuk dark mode */
 }
 
-
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -31,7 +31,6 @@ body {
     text-decoration: none;
 }
 
-
 .nav-links {
     display: flex;
     list-style: none;
@@ -42,7 +41,7 @@ body {
 }
 
 .nav-links li a {
-    padding: 10px;
+   
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
     color: white;
@@ -50,10 +49,7 @@ body {
     font-size: 16px;
 }
 
-
-
-/* popup */
-
+/* Popup */
 .popup {
     position: fixed;
     top: 0;
@@ -75,6 +71,8 @@ body {
     border-radius: 10px;
     text-align: center;
     position: relative;
+    width: 90%;
+    max-width: 400px; /* Maksimal lebar popup agar tidak terlalu besar di layar besar */
 }
 
 .popup-content img {
@@ -99,3 +97,46 @@ body {
     opacity: 0;
 }
 
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar .logo a {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        width: 100%;
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar .logo a {
+        font-size: 16px;
+    }
+
+    .nav-links li a {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .popup-content {
+        width: 95%;
+    }
+}
