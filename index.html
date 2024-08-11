@@ -11,6 +11,8 @@
     <title>Tiket Konser 2024</title>
 </head>
 <body>
+
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
             <a href="#">Brand</a>
@@ -23,10 +25,22 @@
           
         </ul>
     </nav>
-    
+    <!-- Akhir Navbar -->
 
 
+
+<!-- popup -->
+<div id="welcomePopup" class="popup">
+    <div class="popup-content">
+        <img src="https://via.placeholder.com/400x300.png?text=Selamat+Datang" alt="Selamat Datang">
+        <button onclick="closePopup()">Tutup</button>
+    </div>
+</div>
+
+<!-- Script -->
+<script src="script.js"></script>
     <script>
+        // UNTUK MERUBAH MODE TAMPILAN
         function toggleMode() {
             var element = document.body;
             element.classList.toggle("dark-mode");
