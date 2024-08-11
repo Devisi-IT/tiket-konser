@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TEMPAT LINK -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- PEMBATAS -->
+    <title>Tiket Konser 2024</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Brand</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#" onclick="toggleMode()">Mode Gelap</a></li>
+          
+        </ul>
+    </nav>
+    
+
+
+    <script>
+        function toggleMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            element.classList.toggle("light-mode");
+        }
+    </script>
+</body>
+</html>

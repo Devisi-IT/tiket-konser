@@ -1,0 +1,52 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* mode */
+.light-mode {
+    background-color: #ffffff; /* Warna latar belakang untuk white mode */
+    color: #000000; /* Warna teks untuk white mode */
+}
+
+.dark-mode {
+    background-color: #1a1a1a; /* Warna latar belakang untuk dark mode */
+    color: #ffffff; /* Warna teks untuk dark mode */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
